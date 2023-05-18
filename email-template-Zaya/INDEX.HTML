@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <!-- Bootstrap CSS goes here -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-GLhlTQ8iRABdZLl6O3oVMWSktQOp6b7In1Zl3/Jr59b6EGGoI1aFkw7cmDA6j6gD" crossorigin="anonymous">
+  <!--your external CSS stylesheet goes here-->
+    <link rel="stylesheet" href="style.css">
+  <title>Bootstrap Email Template</title>
+</head>
+<body>
+  <!--navbar-->
+  <nav class="navbar bg-body-tertiary">
+    <div class="container-fluid">
+      <a class="navbar-brand">Bunnmail</a>
+      <form class="d-flex" role="search">
+        <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+        <button class="btn btn-outline-success" type="submit">Search</button>
+      </form>
+    </div>
+  </nav>
+</body>
+  <!--container-->
+  <div class="container-fluid">
+    <div class="row vh-100">
+      <div class="col-sm-12 col-md-6 col-lg-2 column1">
+        <!--button-->
+        <button type="button" class="btn btn-secondary">Compose</button>
+        <!--sidenav-->
+        <nav class="nav flex-column">
+          <a class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
+               All Mails 
+          </a>
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
+            Inbox
+          </a>
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
+            Sent
+          </a>
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
+            Draft
+          </a>
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
+            Trash
+          </a>
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
+            More
+          </a>
+        </nav>
+      </div>
+
+      <div class="col-sm-6 col-md-6 col-lg-4 column2">
+        <!--emails preview-->
+        <table class="table table-hover">
+          <tbody>
+            <tr>
+              <td>Preview Message</td>
+              <td>Date</td>
+            </tr>
+            <tr>
+              <td>Preview Message</td>
+              <td>Date</td>
+            </tr>
+            <tr>
+              <td>Preview Message</td>
+              <td>Date</td>
+            </tr>
+          </tbody>
+        </table>
+      </div>
+      <div class="col-sm-4 col-md-12 col-lg-6 column3">
+        <!--write email-->
+        <div class="mb-3">
+          <div>To...</div>
+          <div>From...</div>
+          <div>Email Title...</div>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+          <label for="exampleFormControlTextarea1" class="form-label">Reply</label>
+          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+        </div>
+        <button type="button" class="btn btn-secondary">Send</button>
+      </div>
+    </div>
+  </div>
+  
+</body>
+</html>
