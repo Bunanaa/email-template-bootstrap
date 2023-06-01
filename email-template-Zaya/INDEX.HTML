@@ -12,9 +12,33 @@
 </head>
 <body>
   <!--navbar-->
-  <nav class="navbar bg-body-tertiary">
+
+  <nav class="navbar navbar-expand-lg bg-body-tertiary">
+    
     <div class="container-fluid">
-      <a class="navbar-brand">Bunnmail</a>
+      <a class="navbar-brand justify-content-center" href="#">Bunnmail</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav">
+          <li class="nav-item">
+            <a class="nav-link active" aria-current="page" href="#">Inbox</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sent</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Draft</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Trash</a>
+          </li>
+        </ul>
+      </div>
+    </div>
+  </nav>$$
+  <nav class="navbar bg-body-tertiary">
       <form class="d-flex" role="search">
         <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
         <button class="btn btn-outline-success" type="submit">Search</button>
@@ -25,12 +49,14 @@
   <!--container-->
   <div class="container-fluid">
     <div class="row vh-100">
-      <div class="col-sm-12 col-md-6 col-lg-2 column1">
+      <div class="d-none d-lg-block d-xl-block col-lg-2 column1">
         <!--button-->
+        <div class="d-grid gap-2 col-6 mx-auto">
         <button type="button" class="btn btn-secondary">Compose</button>
+        </div>
         <!--sidenav-->
         <nav class="nav flex-column">
-          <a class="nav-link link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
+          <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
                All Mails 
           </a>
           <a class="link-offset-2 link-offset-3-hover link-underline link-underline-opacity-0 link-underline-opacity-75-hover" href="#">
@@ -51,39 +77,132 @@
         </nav>
       </div>
 
-      <div class="col-sm-6 col-md-6 col-lg-4 column2">
+      <div class="col-12 col-lg-4 column2">
         <!--emails preview-->
-        <table class="table table-hover">
-          <tbody>
-            <tr>
-              <td>Preview Message</td>
-              <td>Date</td>
-            </tr>
-            <tr>
-              <td>Preview Message</td>
-              <td>Date</td>
-            </tr>
-            <tr>
-              <td>Preview Message</td>
-              <td>Date</td>
-            </tr>
-          </tbody>
-        </table>
-      </div>
-      <div class="col-sm-4 col-md-12 col-lg-6 column3">
+        <div class="list-group">
+          <a href="#" class="list-group-item list-group-item-action active" aria-current="true">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Bunny</h5>
+              <small>Today</small>
+            </div>
+            <p class="mb-1">Congrats!</p>
+            <small>You won the lottery for 100 million dolloars!</small>
+          </a>
+          
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Bunny</h5>
+              <small class="text-muted">today</small>
+            </div>
+            <p class="mb-1">Congrats!</p>
+            <small class="text-muted">You won the lottery for 100 million dolloars!</small>
+          </a>
+          
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Bunny</h5>
+              <small class="text-muted">Today</small>
+            </div>
+            <p class="mb-1">Congrats!</p>
+            <small class="text-muted">You won the lottery for 100 million dolloars!</small>
+          </a>
+
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Bunny</h5>
+              <small class="text-muted">Today</small>
+            </div>
+            <p class="mb-1">Congrats!</p>
+            <small class="text-muted">You won the lottery for 100 million dolloars!</small>
+          </a>
+        
+
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Bunny</h5>
+              <small class="text-muted">Today</small>
+            </div>
+            <p class="mb-1">Congrats!</p>
+            <small class="text-muted">You won the lottery for 100 million dolloars!</small>
+          </a>
+
+
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Bunny</h5>
+              <small class="text-muted">Today</small>
+            </div>
+            <p class="mb-1">Congrats!</p>
+            <small class="text-muted">You won the lottery for 100 million dolloars!</small>
+          </a>
+
+
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Bunny</h5>
+              <small class="text-muted">Today</small>
+            </div>
+            <p class="mb-1">Congrats!</p>
+            <small class="text-muted">You won the lottery for 100 million dolloars!</small>
+          </a>
+
+
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Bunny</h5>
+              <small class="text-muted">Today</small>
+            </div>
+            <p class="mb-1">Congrats!</p>
+            <small class="text-muted">You won the lottery for 100 million dolloars!</small>
+          </a>
+
+
+          <a href="#" class="list-group-item list-group-item-action">
+            <div class="d-flex w-100 justify-content-between">
+              <h5 class="mb-1">Bunny</h5>
+              <small class="text-muted">Today</small>
+            </div>
+            <p class="mb-1">Congrats!</p>
+            <small class="text-muted">You won the lottery for 100 million dolloars!</small>
+          </a>
+
+        </div>
+
+     
+      
+
+    </div>
+      <div class=" d-none d-sm-none d-md-block col-sm-4 col-md-12 col-lg-6 column3">
         <!--write email-->
         <div class="mb-3">
           <div>To...</div>
           <div>From...</div>
           <div>Email Title...</div>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
-          <label for="exampleFormControlTextarea1" class="form-label">Reply</label>
-          <textarea class="form-control" id="exampleFormControlTextarea1" rows="10"></textarea>
+
+          <textarea id="Input" name="Input" rows="10" cols="60">
+             Hello, this is amazing!
+             Please kindly deposit the cash right away !
+                        </textarea>
+
+                        <textarea id="Reply" name="Reply" rows="20" cols="60">
+                          Reply
+                        </textarea>
+
         </div>
         <button type="button" class="btn btn-secondary">Send</button>
       </div>
     </div>
   </div>
+
+  <!--smaller screen hide-->
+  <div class="col-lg-2   d-none d-lg-grid  ">
+    <div class="row h-100 subRow_under_mainRow">  
+
+
+
+
+
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
   
 </body>
 </html>

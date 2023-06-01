@@ -1,9 +1,19 @@
 .column1{
   border: 1px rgb(204, 201, 201) solid;
+  background-color: rgb(224, 247, 247);
 }
 .column2{
   border: 1px rgb(204, 201, 201) solid;
+  background-color: rgb(206, 218, 214);
 }
 .column3{
   border: 1px rgb(204, 201, 201) solid;
+  background-color: rgb(195, 241, 226);
+}
+.container-fluid{
+  background-color: rgb(244, 227, 230);
+}
+.navbar{
+  background-color: rgb(244, 227, 230);
+
 }
